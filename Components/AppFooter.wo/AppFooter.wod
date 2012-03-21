@@ -1,0 +1,11 @@
+StUrlEtab: WOHyperlink {
+	href = app.urlEtablissement;
+	string = session.strings.ETABLISSEMENT;//VALID
+	target = "_blank";
+}
+
+StContact: WOHyperlink {
+	href = app.mailContactHref;
+	string = app.mailContact;
+}
+

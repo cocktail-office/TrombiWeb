@@ -1,0 +1,32 @@
+BConnexion: WOSubmitButton {
+	action = connecterUtilisateur;
+	value = "Connexion";
+}
+
+Conditional1: WOConditional {
+	condition = authFailed;
+}
+
+DirectActionsURI: WOString {
+	escapeHTML = false;
+	value = session.directActionsURI;
+}
+
+LoginForm: WOForm {
+}
+
+String1: WOString {
+	value = errorMessage;
+}
+
+TLogin: WOTextField {
+	value = login;
+}
+
+TPasswd: WOPasswordField {
+	value = password;
+}
+
+MainFooter: AppFooter {
+}
+

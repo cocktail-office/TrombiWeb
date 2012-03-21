@@ -1,0 +1,24 @@
+{
+    EOModelVersion = "2.1"; 
+    adaptorName = JDBC; 
+    connectionDictionary = {URL = ""; driver = ""; password = ""; plugin = ""; username = ""; }; 
+    entities = (
+        {
+            className = "org.cocktail.trombino.metier.PhotosEmployesGrhum"; 
+            name = PhotosEmployesGrhum; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.PhotosEtudiantsGrhum"; 
+            name = PhotosEtudiantsGrhum; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.PhotosEtudiantsIutGrhum"; 
+            name = PhotosEtudiantsIutGrhum; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.PhotosEtudiantsOldGrhum"; 
+            name = PhotosEtudiantsOldGrhum; 
+        }
+    ); 
+    userInfo = {modelId = GRHUM; }; 
+}

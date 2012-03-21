@@ -1,0 +1,53 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = "DATAS_PHOTO"; 
+            externalType = BLOB; 
+            name = datasPhoto; 
+            valueClassName = NSData; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "DATE_PRISE"; 
+            externalType = DATE; 
+            name = datePrise; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = "NO_INDIVIDU"; 
+            externalType = NUMBER; 
+            name = noIndividu; 
+            precision = 8; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }
+    ); 
+    attributesUsedForLocking = (noIndividu, datePrise); 
+    className = "org.cocktail.trombino.metier.PhotosEtudiantsGrhum"; 
+    classProperties = (datasPhoto, datePrise, etudiant, individuUlr); 
+    externalName = "GRHUM.PHOTOS_ETUDIANTS_GRHUM"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {"_clientClassPropertyNames" = (datasPhoto, datePrise); }; 
+    name = PhotosEtudiantsGrhum; 
+    primaryKeyAttributes = (noIndividu); 
+    relationships = (
+        {
+            destination = Etudiant; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = noIndividu; sourceAttribute = noIndividu; }); 
+            name = etudiant; 
+        }, 
+        {
+            destination = IndividuUlr; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = noIndividu; sourceAttribute = noIndividu; }); 
+            name = individuUlr; 
+        }
+    ); 
+}

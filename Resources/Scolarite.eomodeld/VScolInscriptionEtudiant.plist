@@ -1,0 +1,329 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = "ADR1_FIXE"; 
+            externalType = VARCHAR2; 
+            name = adr1Fixe; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 60; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ADR2_FIXE"; 
+            externalType = VARCHAR2; 
+            name = adr2Fixe; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 40; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ADR_ADRESSE1"; 
+            externalType = VARCHAR2; 
+            name = adrAdresse1; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 60; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ADR_ADRESSE2"; 
+            externalType = VARCHAR2; 
+            name = adrAdresse2; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 40; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ADR_CIVILITE"; 
+            externalType = VARCHAR2; 
+            name = adrCivilite; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 5; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ADR_NOM"; 
+            externalType = VARCHAR2; 
+            name = adrNom; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 80; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ADR_PRENOM"; 
+            externalType = VARCHAR2; 
+            name = adrPrenom; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 30; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "CODE_POSTAL"; 
+            externalType = VARCHAR2; 
+            name = codePostal; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 5; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "CP_FIXE"; 
+            externalType = VARCHAR2; 
+            name = cpFixe; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 5; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "D_NAISSANCE"; 
+            externalType = VARCHAR2; 
+            name = dNaissance; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 10; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = DOMAINE; 
+            externalType = VARCHAR2; 
+            name = domaine; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 100; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "E_MAIL"; 
+            externalType = VARCHAR2; 
+            name = eMail; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 120; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETUD_CODE_INE"; 
+            externalType = VARCHAR2; 
+            name = etudCodeIne; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 11; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETUD_NUMERO"; 
+            externalType = NUMBER; 
+            name = etudNumero; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "FANN_KEY"; 
+            externalType = NUMBER; 
+            name = fannKey; 
+            precision = 4; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "FDIP_CODE"; 
+            externalType = VARCHAR2; 
+            name = fdipCode; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 7; 
+        }, 
+        {
+            columnName = "FGRA_CODE"; 
+            externalType = VARCHAR2; 
+            name = fgraCode; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 5; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = FORMATION; 
+            externalType = VARCHAR2; 
+            name = formation; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 200; 
+        }, 
+        {
+            columnName = "FSPN_KEY"; 
+            externalType = NUMBER; 
+            name = fspnKey; 
+            precision = 6; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = GRADE; 
+            externalType = VARCHAR2; 
+            name = grade; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 100; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "HIST_NUMERO"; 
+            externalType = NUMBER; 
+            name = histNumero; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            columnName = "IDIPL_NUMERO"; 
+            externalType = NUMBER; 
+            name = idiplNumero; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "L_NATIONALITE"; 
+            externalType = VARCHAR2; 
+            name = lNationalite; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 20; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = MENTION; 
+            externalType = VARCHAR2; 
+            name = mention; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 200; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = NIVEAU; 
+            externalType = NUMBER; 
+            name = niveau; 
+            precision = 1; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "NO_INDIVIDU"; 
+            externalType = NUMBER; 
+            name = noIndividu; 
+            precision = 8; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "NO_TELEPHONE"; 
+            externalType = VARCHAR2; 
+            name = noTelephone; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 14; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = NORMALIEN; 
+            externalType = VARCHAR2; 
+            name = normalien; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 1; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "PERS_ID"; 
+            externalType = NUMBER; 
+            name = persId; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            columnName = SPECIALISATION; 
+            externalType = VARCHAR2; 
+            name = specialisation; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 200; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "TEL_FIXE"; 
+            externalType = VARCHAR2; 
+            name = telFixe; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 14; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "TYPE_INSCRIPTION"; 
+            externalType = VARCHAR2; 
+            name = typeInscription; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 30; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = VILLE; 
+            externalType = VARCHAR2; 
+            name = ville; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 60; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "VILLE_FIXE"; 
+            externalType = VARCHAR2; 
+            name = villeFixe; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 60; 
+        }
+    ); 
+    className = "org.cocktail.trombino.metier.VScolInscriptionEtudiant"; 
+    classProperties = (
+        persId, 
+        fdipCode, 
+        noIndividu, 
+        etudNumero, 
+        fannKey, 
+        adrNom, 
+        adrPrenom, 
+        dNaissance, 
+        normalien, 
+        grade, 
+        fgraCode, 
+        niveau, 
+        formation, 
+        domaine, 
+        mention, 
+        specialisation, 
+        fspnKey, 
+        eMail, 
+        idiplNumero, 
+        adrCivilite, 
+        typeInscription, 
+        histNumero
+    ); 
+    externalName = "SCOLARITE.V_SCOL_INSCRIPTION_ETUDIANT"; 
+    fetchSpecificationDictionary = {}; 
+    name = VScolInscriptionEtudiant; 
+    primaryKeyAttributes = (idiplNumero, fspnKey); 
+}

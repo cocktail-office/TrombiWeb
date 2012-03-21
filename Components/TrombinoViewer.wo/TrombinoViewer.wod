@@ -1,0 +1,21 @@
+Conditional1: WOConditional {
+	condition = session.shouldDisplayEC;
+}
+
+Hyperlink1: WOHyperlink {
+	action = displayTrombinoForEC;
+}
+
+Repetition2: WORepetition {
+	item = anEC;
+	list = session.formationDataProvider.getListeEC;
+}
+
+String2: WOString {
+	value = anEC.libelleComplet;
+}
+
+String3: WOString {
+	value = anEC.mecCode;
+}
+

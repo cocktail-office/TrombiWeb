@@ -1,0 +1,116 @@
+{
+    attributes = (
+        {
+            columnName = "DLOG_LOGIN"; 
+            externalType = VARCHAR2; 
+            name = dlogLogin; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 12; 
+        }, 
+        {
+            columnName = "FANN_KEY"; 
+            externalType = NUMBER; 
+            name = fannKey; 
+            precision = 4; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "FDIP_CODE"; 
+            externalType = VARCHAR2; 
+            name = fdipCode; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 7; 
+        }, 
+        {
+            columnName = "FHAB_KEY"; 
+            externalType = NUMBER; 
+            name = fhabKey; 
+            precision = 6; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "FHAB_NIVEAU"; 
+            externalType = NUMBER; 
+            name = fhabNiveau; 
+            precision = 1; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "FSPN_KEY"; 
+            externalType = NUMBER; 
+            name = fspnKey; 
+            precision = 6; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "MEC_KEY"; 
+            externalType = NUMBER; 
+            name = mecKey; 
+            precision = 6; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "MPAR_KEY"; 
+            externalType = NUMBER; 
+            name = mparKey; 
+            precision = 6; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "MSEM_KEY"; 
+            externalType = NUMBER; 
+            name = msemKey; 
+            precision = 6; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }
+    ); 
+    attributesUsedForLocking = (
+        fannKey, 
+        dlogLogin, 
+        fdipCode, 
+        fspnKey, 
+        mparKey, 
+        msemKey, 
+        mecKey, 
+        fhabKey, 
+        fhabNiveau
+    ); 
+    className = "org.cocktail.trombino.metier.VDroitTrombiEc"; 
+    classProperties = (
+        fannKey, 
+        dlogLogin, 
+        fdipCode, 
+        fspnKey, 
+        mparKey, 
+        msemKey, 
+        mecKey, 
+        fhabKey, 
+        fhabNiveau
+    ); 
+    externalName = "SCOLARITE.V_DROIT_TROMBI_EC"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (
+            fannKey, 
+            dlogLogin, 
+            fdipCode, 
+            fspnKey, 
+            mparKey, 
+            msemKey, 
+            mecKey, 
+            fhabKey, 
+            fhabNiveau
+        ); 
+    }; 
+    name = VDroitTrombiEc; 
+    primaryKeyAttributes = (dlogLogin, fannKey, mecKey); 
+}

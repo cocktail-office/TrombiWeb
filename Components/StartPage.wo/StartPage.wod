@@ -1,0 +1,49 @@
+CondError: WOConditional {
+	condition = thereIsMessage;
+}
+
+Conditional1: WOConditional {
+	//condition = app.config.SHOW_DEPARTEMENT;//VALID
+	condition = false;
+}
+
+DirectActionsURI: WOString {
+	escapeHTML = false;
+	value = session.directActionsURI;
+}
+
+ErrorMessage: WOString {
+	value = errorMessage;
+}
+
+StartPageFooter: AppFooter {
+}
+
+StartPageHeader: AppHeader {
+}
+
+String1: WOString {
+	value = application.config.TEXT_INTRO;//VALID
+	escapeHTML = false;
+}
+
+URLRecupererPhoto: WOActionURL {
+	action = redirectRecupererPhoto;
+}
+
+URLTrombinoParEC: WOActionURL {
+	action = redirectTrombinoParEC;
+}
+
+URLTrombinoParFormation: WOActionURL {
+	action = redirectTrombinoParFormation;
+}
+
+URLTrombinoParSpecialisation: WOActionURL {
+	action = redirectTrombinoParDepartSpecialisation;
+}
+
+fsession: WOForm {
+	action = redirectRecupererPhoto;
+	multipleSubmit = false;
+}

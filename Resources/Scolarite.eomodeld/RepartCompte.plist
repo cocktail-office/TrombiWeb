@@ -1,0 +1,53 @@
+{
+    attributes = (
+        {
+            columnName = "CPT_ORDRE"; 
+            externalType = NUMBER; 
+            name = cptOrdre; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            columnName = "D_CREATION"; 
+            externalType = DATE; 
+            name = dCreation; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = "D_MODIFICATION"; 
+            externalType = DATE; 
+            name = dModification; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = "PERS_ID"; 
+            externalType = NUMBER; 
+            name = persId; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }
+    ); 
+    attributesUsedForLocking = (cptOrdre, persId, dCreation, dModification); 
+    className = "org.cocktail.trombino.metier.RepartCompte"; 
+    classProperties = (dCreation, dModification, compte); 
+    externalName = "GRHUM.REPART_COMPTE"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (dCreation, dModification, compte); 
+        "_nameInObjectStore" = "REPART_COMPTE"; 
+    }; 
+    name = RepartCompte; 
+    primaryKeyAttributes = (persId, cptOrdre); 
+    relationships = (
+        {
+            destination = Compte; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = cptOrdre; sourceAttribute = cptOrdre; }); 
+            name = compte; 
+        }
+    ); 
+}

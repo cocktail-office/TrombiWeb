@@ -1,0 +1,141 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = "ANNEE_UNIV"; 
+            externalType = VARCHAR2; 
+            name = anneeUniv; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 81; 
+        }, 
+        {
+            columnName = "C_CIVILITE"; 
+            externalType = VARCHAR2; 
+            name = cCivilite; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 5; 
+        }, 
+        {
+            columnName = "ETUD_NUMERO"; 
+            externalType = NUMBER; 
+            name = etudNumero; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            columnName = "FANN_KEY"; 
+            externalType = NUMBER; 
+            name = fannKey; 
+            precision = 4; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "MEC_CODE"; 
+            externalType = VARCHAR2; 
+            name = mecCode; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 20; 
+        }, 
+        {
+            columnName = "MEC_KEY"; 
+            externalType = NUMBER; 
+            name = mecKey; 
+            precision = 6; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "MEC_LIBELLE"; 
+            externalType = VARCHAR2; 
+            name = mecLibelle; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 100; 
+        }, 
+        {
+            columnName = "NO_INDIVIDU"; 
+            externalType = NUMBER; 
+            name = noIndividu; 
+            precision = 8; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "NOM_USUEL"; 
+            externalType = VARCHAR2; 
+            name = nomUsuel; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 80; 
+        }, 
+        {
+            columnName = PRENOM; 
+            externalType = VARCHAR2; 
+            name = prenom; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 30; 
+        }
+    ); 
+    attributesUsedForLocking = (
+        noIndividu, 
+        nomUsuel, 
+        prenom, 
+        etudNumero, 
+        mecLibelle, 
+        mecCode, 
+        mecKey, 
+        anneeUniv, 
+        fannKey, 
+        cCivilite
+    ); 
+    className = "org.cocktail.trombino.metier.VScolInscriptionEc"; 
+    classProperties = (
+        noIndividu, 
+        nomUsuel, 
+        prenom, 
+        etudNumero, 
+        mecLibelle, 
+        mecCode, 
+        mecKey, 
+        anneeUniv, 
+        fannKey, 
+        scolMaquetteEc, 
+        cCivilite
+    ); 
+    externalName = "SCOLARITE.V_SCOL_INSCRIPTION_EC"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (
+            noIndividu, 
+            nomUsuel, 
+            prenom, 
+            etudNumero, 
+            mecLibelle, 
+            mecCode, 
+            mecKey, 
+            anneeUniv, 
+            fannKey
+        ); 
+    }; 
+    name = VScolInscriptionEc; 
+    primaryKeyAttributes = (fannKey, mecKey, etudNumero); 
+    relationships = (
+        {
+            destination = ScolMaquetteEc; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = (
+                {destinationAttribute = fannKey; sourceAttribute = fannKey; }, 
+                {destinationAttribute = mecKey; sourceAttribute = mecKey; }
+            ); 
+            name = scolMaquetteEc; 
+        }
+    ); 
+}

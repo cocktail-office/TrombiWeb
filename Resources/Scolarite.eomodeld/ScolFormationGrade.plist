@@ -1,0 +1,76 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = "FGRA_ABREVIATION"; 
+            externalType = VARCHAR2; 
+            name = fgraAbreviation; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 20; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "FGRA_CODAGE"; 
+            externalType = VARCHAR2; 
+            name = fgraCodage; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 2; 
+        }, 
+        {
+            columnName = "FGRA_CODE"; 
+            externalType = VARCHAR2; 
+            name = fgraCode; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 5; 
+        }, 
+        {
+            columnName = "FGRA_LIBELLE"; 
+            externalType = VARCHAR2; 
+            name = fgraLibelle; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 100; 
+        }, 
+        {
+            columnName = "FGRA_VALIDITE"; 
+            externalType = VARCHAR2; 
+            name = fgraValidite; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 1; 
+        }
+    ); 
+    attributesUsedForLocking = (fgraValidite, fgraCode, fgraCodage, fgraAbreviation, fgraLibelle); 
+    className = "org.cocktail.trombino.metier.ScolFormationGrade"; 
+    classProperties = (
+        fgraValidite, 
+        fgraCode, 
+        fgraCodage, 
+        fgraAbreviation, 
+        fgraLibelle, 
+        scolFormationDiplome
+    ); 
+    externalName = "SCOLARITE.SCOL_FORMATION_GRADE"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (fgraValidite, fgraCode, fgraCodage, fgraAbreviation, fgraLibelle); 
+        uniqueID = 165558115; 
+    }; 
+    name = ScolFormationGrade; 
+    primaryKeyAttributes = (fgraCode); 
+    relationships = (
+        {
+            deleteRule = EODeleteRuleNoAction; 
+            destination = ScolFormationDiplome; 
+            isMandatory = Y; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = fgraCode; sourceAttribute = fgraCode; }); 
+            name = scolFormationDiplome; 
+        }
+    ); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

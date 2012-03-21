@@ -1,0 +1,41 @@
+CondExtControls: WOConditional {
+	condition = session.showExtendedControls;
+}
+
+CondMSIE: WOConditional {
+	condition = session.isIE;
+}
+
+CondNoMSIE: WOConditional {
+	condition = session.isIE;
+	negate = true;
+}
+
+CanPrint : WOConditional {
+	condition = canPrint;
+}
+
+LinkPrint: WOActionURL {
+	action = printTrombino;
+}
+ImageBImprimer: WOImage {
+	filename = "img/bimprimer.gif";
+}
+
+LinkStartPage: WOActionURL {
+	action = redirectToStartPage;
+}
+ImageBRetour: WOImage {
+	filename = "img/bretour.gif";
+}
+
+LinkTerminateSess: WOActionURL {
+	action = session.logout;
+}
+ImageBQuitter: WOImage {
+	filename = "img/bquitter.gif";
+}
+
+PageTitle: WOString {
+	value = session.trombinoPageTitle;
+}

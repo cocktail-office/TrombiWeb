@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html">
+	<meta name="generator" content="WebObjects 5.3.1">
+	<title>Trombino étudiant</title>
+	
+	<script type="text/javascript" language="javascript">
+		daURI='<WEBOBJECT NAME=DirectActionsURI></WEBOBJECT>';
+	</script>
+	
+</head>
+
+<body>
+
+<div id="page">
+	
+	<webobject name="StartPageHeader"></webobject>
+	<!-- isoler ce div dans un composant -->
+
+	<webobject name="fsession">
+	<div id="generalite">
+		
+		<webobject name="CondError"><webobject name="ErrorMessage"></webobject></webobject>
+	
+		<br>
+		<div id="intro">
+		<WEBOBJECT NAME=String1></WEBOBJECT>
+		</div>
+		<br/>
+
+		<div class="centeredarea">
+			<a href="<webobject name=URLRecupererPhoto></webobject>" title="En saisissant le nom d'un étudiant">Par étudiant</a>
+		</div>
+		
+		<div class="centeredarea">
+			<a href="<webobject name=URLTrombinoParFormation></webobject>" title="Navigation dans les formations">Par Formation</a>
+		</div>
+
+		<div class="centeredarea">
+			<a href="<webobject name=URLTrombinoParEC></webobject>" title="En entrant le cod d'un Element Constitutif">Par E.C.</a>
+		</div>
+
+		<WEBOBJECT NAME=Conditional1><div class="centeredarea">
+			<a href="<webobject name=URLTrombinoParSpecialisation></webobject>" title="En sélectionnant un des départements d'enseignement">Par Département</a>
+		</div></WEBOBJECT>
+		
+	</div>
+	
+	</webobject><webobject name="StartPageFooter"></webobject>
+</div>
+</body>
+</html>

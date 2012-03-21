@@ -1,0 +1,65 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = ADMINISTRATEUR; 
+            externalType = VARCHAR2; 
+            name = administrateur; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 1; 
+        }, 
+        {
+            columnName = "DLOG_KEY"; 
+            externalType = NUMBER; 
+            name = dlogKey; 
+            precision = 6; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "DLOG_LOGIN"; 
+            externalType = VARCHAR2; 
+            name = dlogLogin; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 12; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "DLOG_NOM"; 
+            externalType = VARCHAR2; 
+            name = dlogNom; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 80; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "DLOG_PRENOM"; 
+            externalType = VARCHAR2; 
+            name = dlogPrenom; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 60; 
+        }, 
+        {
+            columnName = "DLOG_VALIDE"; 
+            externalType = VARCHAR2; 
+            name = dlogValide; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 1; 
+        }
+    ); 
+    attributesUsedForLocking = (dlogKey, dlogLogin, dlogNom, dlogPrenom, dlogValide, administrateur); 
+    className = "org.cocktail.trombino.metier.VDroitsLogin"; 
+    classProperties = (dlogKey, dlogLogin, dlogNom, dlogPrenom, dlogValide, administrateur); 
+    externalName = "SCOLARITE.V_DROITS_LOGIN"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (dlogKey, dlogLogin, dlogNom, dlogPrenom, dlogValide, administrateur); 
+    }; 
+    name = VDroitsLogin; 
+    primaryKeyAttributes = (dlogKey); 
+}

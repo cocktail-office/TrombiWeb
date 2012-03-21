@@ -1,0 +1,102 @@
+ComboAnneeEC: WOPopUpButton {
+	class = "selbox_grd";
+	item = anAnnee;
+	list = app.listAnnees;
+	value = anAnnee.fannDebut;
+	selection = session.formationDataProvider.formAnneeEc;
+	displayString = anAnnee.toString;
+	id = "comboAnneeEc";
+}
+
+ComboAnneeEC2: WOPopUpButton {
+	class = "selbox_grd";
+	item = anAnnee;
+	list = app.listAnnees;
+	value = anAnnee.fannDebut;
+	selection = session.formationDataProvider.formAnneeDpt;
+	displayString = anAnnee.toString;
+	id = "comboAnneeSpe";
+	onChange = "remplirSpecialisation();";
+}
+
+Conditional1: WOConditional {
+	condition = session.isSearchEtudiant;
+}
+
+Conditional2: WOConditional {
+	condition = session.isSearchParFormation;
+}
+
+Conditional3: WOConditional {
+	condition = session.isSearchParEC;
+}
+
+Conditional4: WOConditional {
+	condition = session.isSearchDept;
+}
+
+FormEC: WOForm {
+}
+
+FormEtudiant: WOForm {
+}
+
+FormFormation: WOForm {
+	action = rechercherParFormation;
+}
+
+FormSpeDpt: WOForm {
+	action = rechercherParSpecialisationDpt;
+}
+
+PopUpButton1: WOPopUpButton {
+	id = "comboGrade";
+	list = app.listGrades;
+	onChange = "remplirFormations();";
+	displayString = aGrade.displayString;
+	item = aGrade;
+	value = aGrade.fgraCode;
+	noSelectionString = "";
+	selection = session.formationDataProvider.scolFormationGrade;
+	class = "selbox_grd";
+}
+
+PopUpButton2: WOPopUpButton {
+	id = "comboNiveau";
+	list = app.listNiveau;
+	onChange = "remplirFormations();";
+	item = aNiveau;
+	noSelectionString = "";
+	value = aNiveau.fhabNiveau;
+	selection = session.formationDataProvider.niveau;
+	class = "selbox_niv";
+}
+
+SubmitButton1: WOSubmitButton {
+	action = rechercherEtudiant;
+	value = "Rechercher";
+}
+
+SubmitButton2: WOSubmitButton {
+	action = rechercherEC;
+	value = "Rechercher";
+}
+
+TCodeEC: WOTextField {
+	value = session.formationDataProvider.codeEC;
+	class = "textfield";
+}
+
+TextField1: WOTextField {
+	value = nomEtudiant;
+}
+
+comboAnnee: WOPopUpButton {
+	list = app.listAnnees;
+	displayString = anAnnee.toString;
+	item = anAnnee;
+	value = anAnnee.fannDebut;
+	id = "comboAnnee";
+	selection = session.formationDataProvider.scolFormationAnnee;
+	class = "selbox_grd";
+}

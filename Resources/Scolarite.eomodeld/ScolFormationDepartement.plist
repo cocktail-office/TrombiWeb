@@ -1,0 +1,48 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = "FDEP_ABREVIATION"; 
+            externalType = VARCHAR2; 
+            name = fdepAbreviation; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 20; 
+        }, 
+        {
+            columnName = "FDEP_CODE"; 
+            externalType = VARCHAR2; 
+            name = fdepCode; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 5; 
+        }, 
+        {
+            columnName = "FDEP_LIBELLE"; 
+            externalType = VARCHAR2; 
+            name = fdepLibelle; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 100; 
+        }, 
+        {
+            columnName = "FDEP_VALIDITE"; 
+            externalType = VARCHAR2; 
+            name = fdepValidite; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 1; 
+        }
+    ); 
+    attributesUsedForLocking = (fdepCode, fdepLibelle, fdepAbreviation, fdepValidite); 
+    className = "org.cocktail.trombino.metier.ScolFormationDepartement"; 
+    classProperties = (fdepLibelle, fdepAbreviation, fdepValidite); 
+    externalName = "SCOLARITE.SCOL_FORMATION_DEPARTEMENT"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (fdepLibelle, fdepAbreviation, fdepValidite); 
+        "_javaClientClassName" = "admission.client.ScolFormationDepartement"; 
+    }; 
+    name = ScolFormationDepartement; 
+    primaryKeyAttributes = (fdepCode); 
+}

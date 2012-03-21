@@ -1,0 +1,163 @@
+{
+    attributes = (
+        {
+            columnName = "C_CIVILITE"; 
+            externalType = VARCHAR2; 
+            name = cCivilite; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 5; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "D_NAISSANCE"; 
+            externalType = DATE; 
+            name = dNaissance; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "IND_PHOTO"; 
+            externalType = VARCHAR2; 
+            name = indPhoto; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 1; 
+        }, 
+        {
+            columnName = "LISTE_ROUGE"; 
+            externalType = CHAR; 
+            name = listeRouge; 
+            valueClassName = NSString; 
+            valueType = c; 
+            width = 1; 
+        }, 
+        {
+            columnName = "NO_INDIVIDU"; 
+            externalType = NUMBER; 
+            name = noIndividu; 
+            precision = 8; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "NOM_AFFICHAGE"; 
+            externalType = VARCHAR2; 
+            name = nomAffichage; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 80; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "NOM_PATRONYMIQUE"; 
+            externalType = VARCHAR2; 
+            name = nomPatronymique; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 80; 
+        }, 
+        {
+            columnName = "NOM_USUEL"; 
+            externalType = VARCHAR2; 
+            name = nomUsuel; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 80; 
+        }, 
+        {
+            columnName = "PERS_ID"; 
+            externalType = NUMBER; 
+            name = persId; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            columnName = PRENOM; 
+            externalType = VARCHAR2; 
+            name = prenom; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 30; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = PRENOM2; 
+            externalType = VARCHAR2; 
+            name = prenom2; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 40; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "PRENOM_AFFICHAGE"; 
+            externalType = VARCHAR2; 
+            name = prenomAffichage; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 40; 
+        }, 
+        {
+            columnName = "TEM_VALIDE"; 
+            externalType = VARCHAR2; 
+            name = temValide; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 1; 
+        }
+    ); 
+    attributesUsedForLocking = (
+        noIndividu, 
+        persId, 
+        nomPatronymique, 
+        prenom, 
+        cCivilite, 
+        nomUsuel, 
+        prenom2, 
+        dNaissance, 
+        indPhoto, 
+        temValide, 
+        listeRouge, 
+        nomAffichage, 
+        prenomAffichage
+    ); 
+    className = "org.cocktail.trombino.metier.IndividuUlr"; 
+    classProperties = (
+        persId, 
+        nomPatronymique, 
+        prenom, 
+        cCivilite, 
+        nomUsuel, 
+        prenom2, 
+        dNaissance, 
+        indPhoto, 
+        temValide, 
+        listeRouge, 
+        nomAffichage, 
+        prenomAffichage
+    ); 
+    externalName = "GRHUM.INDIVIDU_ULR"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (
+            persId, 
+            nomPatronymique, 
+            prenom, 
+            cCivilite, 
+            nomUsuel, 
+            prenom2, 
+            dNaissance, 
+            indPhoto, 
+            temValide, 
+            listeRouge, 
+            nomAffichage, 
+            prenomAffichage
+        ); 
+        "_nameInObjectStore" = "INDIVIDU_ULR"; 
+    }; 
+    name = IndividuUlr; 
+    primaryKeyAttributes = (noIndividu); 
+}

@@ -1,0 +1,21 @@
+CompRecherche: Recherche {
+}
+
+CompTrombinoViewer: TrombinoViewer {
+}
+
+DirectActionsURI: WOString {
+	escapeHTML = false;
+	value = session.directActionsURI;
+}
+
+SessionID: WOString {
+	value = session.sessionID;
+}
+
+TrombiFooter: AppFooter {
+}
+
+TrombiHeader: AppHeader {
+}
+

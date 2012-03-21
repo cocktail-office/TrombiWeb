@@ -1,0 +1,79 @@
+{
+    EOModelVersion = "2.1"; 
+    adaptorName = JDBC; 
+    connectionDictionary = {URL = ""; driver = ""; password = ""; plugin = ""; username = ""; }; 
+    entities = (
+        {className = "org.cocktail.trombino.metier.Compte"; name = Compte; }, 
+        {className = "org.cocktail.trombino.metier.Etudiant"; name = Etudiant; }, 
+        {className = "org.cocktail.trombino.metier.IndividuUlr"; name = IndividuUlr; }, 
+        {
+            className = "org.cocktail.trombino.metier.RepartCompte"; 
+            name = RepartCompte; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.ScolFormationAnnee"; 
+            name = ScolFormationAnnee; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.ScolFormationDepartement"; 
+            name = ScolFormationDepartement; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.ScolFormationDiplome"; 
+            name = ScolFormationDiplome; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.ScolFormationDomaine"; 
+            name = ScolFormationDomaine; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.ScolFormationFiliere"; 
+            name = ScolFormationFiliere; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.ScolFormationGrade"; 
+            name = ScolFormationGrade; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.ScolFormationHabilitation"; 
+            name = ScolFormationHabilitation; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.ScolFormationSpecialisation"; 
+            name = ScolFormationSpecialisation; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.ScolInscriptionEc"; 
+            name = ScolInscriptionEc; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.ScolMaquetteEc"; 
+            name = ScolMaquetteEc; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.VDroitFormation"; 
+            name = VDroitFormation; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.VDroitTrombiEc"; 
+            name = VDroitTrombiEc; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.VDroitsLogin"; 
+            name = VDroitsLogin; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.VScolInscriptionEc"; 
+            name = VScolInscriptionEc; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.VScolInscriptionEtudiant"; 
+            name = VScolInscriptionEtudiant; 
+        }, 
+        {
+            className = "org.cocktail.trombino.metier.VTrombiFormation"; 
+            name = VTrombiFormation; 
+        }
+    ); 
+    userInfo = {modelId = LMD; }; 
+}

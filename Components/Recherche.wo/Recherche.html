@@ -1,0 +1,42 @@
+<webobject name="FormEtudiant">
+	<webobject name="Conditional1">
+		<div class="largesearcharea">
+			&nbsp;Nom (3 caract&egrave;res min) : <webobject name="TextField1"></webobject> 
+			<webobject name="SubmitButton1"/>
+		</div>
+	</webobject>
+</webobject>
+	
+<webobject name="FormFormation">
+	<webobject name="Conditional2">
+		<div id="rech_formations">
+			<div class="searcharea">
+				&nbsp;Ann&eacute;e universitaire : <webobject name="comboAnnee"></webobject>
+			</div>
+		
+			<!--div class="searcharea">
+				&nbsp;Grade <webobject name="PopUpButton1"></webobject> Niveau <webobject name="PopUpButton2"></webobject>
+			</div>
+		
+			<div class="largesearcharea">
+				<select id="comboFormation" name="comboFormation" class="selbox_form" onChange="this.form.submit();"></select>
+			</div-->
+		
+			<div class="ultralargesearcharea">
+				&nbsp;Grade <webobject name="PopUpButton1"></webobject> Niveau <webobject name="PopUpButton2"></webobject> Formation <select class="selbox_form" id="comboFormation" name="comboFormation" onchange="this.form.submit();"></select>
+			</div>
+		</div>
+	</webobject>
+</webobject>
+
+<webobject name="FormEC">
+	<webobject name="Conditional3">
+		<div class="largesearcharea">
+			<div style="margin: auto;">
+				&nbsp;Ann&eacute;e : <webobject name="ComboAnneeEC"></webobject> Code de l'EC : <webobject name="TCodeEC"></webobject> <webobject name="SubmitButton2"></webobject>
+			</div>
+		</div>
+	</webobject><webobject name="FormSpeDpt"><webobject name="Conditional4">Ann&eacute;e : <webobject name="ComboAnneeEC2"></webobject> D&eacute;partement : <select id="comboSpe" name="comboSpe" onchange="this.form.submit();"></select></webobject></webobject>
+</webobject>
+
+	

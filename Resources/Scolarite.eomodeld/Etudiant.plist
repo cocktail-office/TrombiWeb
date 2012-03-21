@@ -1,0 +1,329 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = "ACAD_CODE_BAC"; 
+            externalType = VARCHAR2; 
+            name = acadCodeBac; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 3; 
+        }, 
+        {
+            columnName = "BAC_CODE"; 
+            externalType = VARCHAR2; 
+            name = bacCode; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 4; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "C_DEPARTEMENT_ETAB_BAC"; 
+            externalType = VARCHAR2; 
+            name = cDepartementEtabBac; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 3; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "C_DEPARTEMENT_PARENT"; 
+            externalType = VARCHAR2; 
+            name = cDepartementParent; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 3; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "C_PAYS_ETAB_BAC"; 
+            externalType = VARCHAR2; 
+            name = cPaysEtabBac; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 3; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "CAND_NUMERO"; 
+            externalType = NUMBER; 
+            name = candNumero; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            columnName = "D_CREATION"; 
+            externalType = DATE; 
+            name = dCreation; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = "D_MODIFICATION"; 
+            externalType = DATE; 
+            name = dModification; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETAB_CODE_BAC"; 
+            externalType = VARCHAR2; 
+            name = etabCodeBac; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 8; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETAB_CODE_SUP"; 
+            externalType = VARCHAR2; 
+            name = etabCodeSup; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 8; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETUD_ANBAC"; 
+            externalType = NUMBER; 
+            name = etudAnbac; 
+            precision = 4; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETUD_ANNEE_1INSC_SUP"; 
+            externalType = NUMBER; 
+            name = etudAnnee1inscSup; 
+            precision = 4; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETUD_ANNEE_1INSC_ULR"; 
+            externalType = NUMBER; 
+            name = etudAnnee1inscUlr; 
+            precision = 4; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETUD_ANNEE_1INSC_UNIV"; 
+            externalType = NUMBER; 
+            name = etudAnnee1inscUniv; 
+            precision = 4; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETUD_CODE_INE"; 
+            externalType = VARCHAR2; 
+            name = etudCodeIne; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 11; 
+        }, 
+        {
+            columnName = "ETUD_NUMERO"; 
+            externalType = NUMBER; 
+            name = etudNumero; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETUD_REIMMATRICULATION"; 
+            externalType = VARCHAR2; 
+            name = etudReimmatriculation; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 1; 
+        }, 
+        {
+            columnName = "ETUD_SITFAM"; 
+            externalType = NUMBER; 
+            name = etudSitfam; 
+            precision = 1; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETUD_SN_ATTESTATION"; 
+            externalType = NUMBER; 
+            name = etudSnAttestation; 
+            precision = 1; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETUD_SN_CERTIFICATION"; 
+            externalType = NUMBER; 
+            name = etudSnCertification; 
+            precision = 1; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "ETUD_SPORT_HN"; 
+            externalType = NUMBER; 
+            name = etudSportHn; 
+            precision = 1; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "ETUD_VILLE_BAC"; 
+            externalType = VARCHAR2; 
+            name = etudVilleBac; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 50; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "MENT_CODE"; 
+            externalType = VARCHAR2; 
+            name = mentCode; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 1; 
+        }, 
+        {
+            columnName = "NO_INDIVIDU"; 
+            externalType = NUMBER; 
+            name = noIndividu; 
+            precision = 8; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "PRO_CODE"; 
+            externalType = VARCHAR2; 
+            name = proCode; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 3; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "THEB_CODE"; 
+            externalType = VARCHAR2; 
+            name = thebCode; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 1; 
+        }
+    ); 
+    attributesUsedForLocking = (
+        etudNumero, 
+        noIndividu, 
+        bacCode, 
+        etabCodeBac, 
+        etudCodeIne, 
+        mentCode, 
+        cDepartementParent, 
+        proCode, 
+        etudSitfam, 
+        etudAnbac, 
+        etudSportHn, 
+        etudAnnee1inscUlr, 
+        etudAnnee1inscUniv, 
+        etabCodeSup, 
+        candNumero, 
+        cDepartementEtabBac, 
+        cPaysEtabBac, 
+        etudVilleBac, 
+        etudReimmatriculation, 
+        thebCode, 
+        acadCodeBac, 
+        dCreation, 
+        dModification, 
+        etudAnnee1inscSup, 
+        etudSnAttestation, 
+        etudSnCertification
+    ); 
+    className = "org.cocktail.trombino.metier.Etudiant"; 
+    classProperties = (
+        bacCode, 
+        etabCodeBac, 
+        etudCodeIne, 
+        mentCode, 
+        cDepartementParent, 
+        proCode, 
+        etudSitfam, 
+        etudAnbac, 
+        etudSportHn, 
+        etudAnnee1inscUlr, 
+        etudAnnee1inscUniv, 
+        etabCodeSup, 
+        candNumero, 
+        cDepartementEtabBac, 
+        cPaysEtabBac, 
+        etudVilleBac, 
+        etudReimmatriculation, 
+        thebCode, 
+        acadCodeBac, 
+        dCreation, 
+        dModification, 
+        etudAnnee1inscSup, 
+        etudSnAttestation, 
+        etudSnCertification, 
+        etudNumero, 
+        noIndividu, 
+        individuUlr
+    ); 
+    externalName = "GRHUM.ETUDIANT"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (
+            bacCode, 
+            etabCodeBac, 
+            etudCodeIne, 
+            mentCode, 
+            cDepartementParent, 
+            proCode, 
+            etudSitfam, 
+            etudAnbac, 
+            etudSportHn, 
+            etudAnnee1inscUlr, 
+            etudAnnee1inscUniv, 
+            etabCodeSup, 
+            candNumero, 
+            cDepartementEtabBac, 
+            cPaysEtabBac, 
+            etudVilleBac, 
+            etudReimmatriculation, 
+            thebCode, 
+            acadCodeBac, 
+            dCreation, 
+            dModification, 
+            etudAnnee1inscSup, 
+            etudSnAttestation, 
+            etudSnCertification, 
+            etudNumero, 
+            noIndividu
+        ); 
+        "_nameInObjectStore" = ETUDIANT; 
+    }; 
+    name = Etudiant; 
+    primaryKeyAttributes = (noIndividu); 
+    relationships = (
+        {
+            destination = IndividuUlr; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = noIndividu; sourceAttribute = noIndividu; }); 
+            name = individuUlr; 
+        }
+    ); 
+}

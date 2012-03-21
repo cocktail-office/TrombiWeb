@@ -1,0 +1,48 @@
+{
+    attributes = (
+        {
+            columnName = "FANN_COURANTE"; 
+            externalType = VARCHAR2; 
+            name = fannCourante; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 1; 
+        }, 
+        {
+            columnName = "FANN_DEBUT"; 
+            externalType = NUMBER; 
+            name = fannDebut; 
+            precision = 4; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "FANN_FIN"; 
+            externalType = NUMBER; 
+            name = fannFin; 
+            precision = 4; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            columnName = "FANN_KEY"; 
+            externalType = NUMBER; 
+            name = fannKey; 
+            precision = 4; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }
+    ); 
+    attributesUsedForLocking = (fannKey, fannFin, fannCourante, fannDebut); 
+    className = "org.cocktail.trombino.metier.ScolFormationAnnee"; 
+    classProperties = (fannFin, fannCourante, fannDebut, fannKey); 
+    externalName = "SCOLARITE.SCOL_FORMATION_ANNEE"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {
+        "_clientClassPropertyNames" = (fannFin, fannCourante, fannDebut); 
+        uniqueID = 165558048; 
+    }; 
+    name = ScolFormationAnnee; 
+    primaryKeyAttributes = (fannKey); 
+    userInfo = {fetchSpecificationDictionary = {}; }; 
+}

@@ -1,0 +1,3 @@
+Body : WOBody {
+	onload = onload;
+}
